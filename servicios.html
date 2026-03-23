@@ -10,20 +10,87 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <style>
         body { padding-top: 80px; }
-        .navbar-brand { padding: 5px 0; min-width: 180px; display: flex; align-items: center; gap: 10px; font-size: 1.5rem; font-weight: 700; letter-spacing: 1px; }
+        .navbar-brand { 
+            padding: 5px 0; 
+            min-width: 180px; 
+            display: flex; 
+            align-items: center; 
+            gap: 10px; 
+            font-size: 1.5rem; 
+            font-weight: 700; 
+            letter-spacing: 1px; 
+        }
         .brand-logo { height: 40px; width: auto; border-radius: 5px; }
-        .video-container { position: relative; width: 100%; height: 80vh; overflow: hidden; }
-        .video-container video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; transform: translate(-50%, -50%); object-fit: cover; }
-        .video-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.2); }
-        .section-title { margin-bottom: 40px; font-weight: 700; color: #2E7D32; text-align: center; text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
-        .card { transition: transform 0.3s ease, box-shadow 0.3s ease; border: none; }
-        .card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); }
-        .price-badge { font-size: 1.3rem; font-weight: bold; background-color: #2E7D32; color: white; padding: 8px 16px; border-radius: 50px; display: inline-block; margin: 10px 0; }
-        footer { background-color: #212529; color: #FFFFFF; padding: 40px 0; margin-top: 60px; }
-        .social-icon { font-size: 1.8rem; color: #FFFFFF; margin: 0 10px; transition: color 0.3s ease; }
+        .video-container { 
+            position: relative; 
+            width: 100%; 
+            height: 80vh; 
+            overflow: hidden; 
+        }
+        .video-container video { 
+            position: absolute; 
+            top: 50%; 
+            left: 50%; 
+            min-width: 100%; 
+            min-height: 100%; 
+            transform: translate(-50%, -50%); 
+            object-fit: cover; 
+        }
+        .video-overlay { 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            background-color: rgba(0, 0, 0, 0.2); 
+        }
+        .section-title { 
+            margin-bottom: 40px; 
+            font-weight: 700; 
+            color: #2E7D32; 
+            text-align: center; 
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+        }
+        .card { 
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+            border: none; 
+        }
+        .card:hover { 
+            transform: translateY(-10px); 
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); 
+        }
+        .price-badge { 
+            font-size: 1.3rem; 
+            font-weight: bold; 
+            background-color: #2E7D32; 
+            color: white; 
+            padding: 8px 16px; 
+            border-radius: 50px; 
+            display: inline-block; 
+            margin: 10px 0; 
+        }
+        footer { 
+            background-color: #212529; 
+            color: #FFFFFF; 
+            padding: 40px 0; 
+            margin-top: 60px; 
+        }
+        .social-icon { 
+            font-size: 1.8rem; 
+            color: #FFFFFF; 
+            margin: 0 10px; 
+            transition: color 0.3s ease; 
+        }
         .social-icon:hover { color: #2E7D32; }
-        .btn-verde { background-color: #2E7D32; color: white; border: none; }
-        .btn-verde:hover { background-color: #1B5E20; color: white; }
+        .btn-verde { 
+            background-color: #2E7D32; 
+            color: white; 
+            border: none; 
+        }
+        .btn-verde:hover { 
+            background-color: #1B5E20; 
+            color: white; 
+        }
         .text-footer { color: #E0E0E0; }
         .hr-footer { border-color: #444444; }
         @media (max-width: 768px) {
@@ -39,8 +106,8 @@
     <!-- MENÚ FIJO SUPERIOR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="logo.jfif" alt="Logo CatRabit" class="brand-logo">
+            <a class="navbar-brand" href="index.html">
+                <img src="./logo.jfif" alt="Logo CatRabit" class="brand-logo">
                 CatRabit
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,12 +129,12 @@
     <section class="video-container">
         <div class="video-overlay"></div>
         <video autoplay muted loop playsinline preload="metadata">
-            <source src="produc.mp4" type="video/mp4">
+            <source src="./produc.mp4" type="video/mp4">
             Tu navegador no soporta la reproducción de videos.
         </video>
     </section>
 
-    <!-- SECCIÓN GALERÍA DE PRODUCTOS MEJORADA -->
+    <!-- SECCIÓN GALERÍA DE PRODUCTOS -->
     <section class="container py-5">
         <h2 class="section-title">Nuestros Productos Destacados</h2>
         <p class="text-center lead mb-5">Alimentos balanceados, henos premium y snacks naturales para gatos y conejos. Calidad sostenible, ingredientes seleccionados y precios accesibles.</p>
@@ -76,7 +143,7 @@
             <!-- 1 -->
             <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="card h-100 shadow text-center">
-                    <img src="croqueta5.jfif" class="card-img-top" alt="Alimento Gatos Adultos" style="height: 220px; object-fit: cover;">
+                    <img src="./croqueta5.jfif" class="card-img-top" alt="Alimento Gatos Adultos" style="height: 220px; object-fit: cover;">
                     <div class="card-body">
                         <h5 class="card-title">Alimento Balanceado Gatos Adultos</h5>
                         <p class="card-text text-muted small">Pollo y cereales integrales – 3 kg</p>
@@ -85,11 +152,10 @@
                     </div>
                 </div>
             </div>
-
             <!-- 2 -->
             <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="card h-100 shadow text-center">
-                    <img src="plantaco2.jfif" class="card-img-top" alt="Heno Timothy" style="height: 220px; object-fit: cover;">
+                    <img src="./plantaco2.jfif" class="card-img-top" alt="Heno Timothy" style="height: 220px; object-fit: cover;">
                     <div class="card-body">
                         <h5 class="card-title">Heno Timothy Premium</h5>
                         <p class="card-text text-muted small">Alto en fibra – 2 kg</p>
@@ -98,11 +164,10 @@
                     </div>
                 </div>
             </div>
-
             <!-- 3 -->
             <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="card h-100 shadow text-center">
-                    <img src="cajacoga.jfif" class="card-img-top" alt="Snacks Dual" style="height: 220px; object-fit: cover;">
+                    <img src="./cajacoga.jfif" class="card-img-top" alt="Snacks Dual" style="height: 220px; object-fit: cover;">
                     <div class="card-body">
                         <h5 class="card-title">Snacks Naturales Dual</h5>
                         <p class="card-text text-muted small">Hierbas frescas – 150 g</p>
@@ -111,11 +176,10 @@
                     </div>
                 </div>
             </div>
-
-            <!-- 4 Nuevo -->
+            <!-- 4 -->
             <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="card h-100 shadow text-center">
-                    <img src="cogato.jpg" class="card-img-top" alt="Alimento Gatitos" style="height: 220px; object-fit: cover;">
+                    <img src="./cogato.jpg" class="card-img-top" alt="Alimento Gatitos" style="height: 220px; object-fit: cover;">
                     <div class="card-body">
                         <h5 class="card-title">Alimento Gatitos Crecimiento</h5>
                         <p class="card-text text-muted small">Alta proteína – 1.5 kg</p>
@@ -124,11 +188,10 @@
                     </div>
                 </div>
             </div>
-
-            <!-- 5 Nuevo -->
+            <!-- 5 -->
             <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="card h-100 shadow text-center">
-                    <img src="comidaconejo.jfif" class="card-img-top" alt="Mezcla de Henos" style="height: 220px; object-fit: cover;">
+                    <img src="./comidaconejo.jfif" class="card-img-top" alt="Mezcla de Henos" style="height: 220px; object-fit: cover;">
                     <div class="card-body">
                         <h5 class="card-title">Mezcla de Henos para Conejos</h5>
                         <p class="card-text text-muted small">Timothy + alfalfa – 1.5 kg</p>
@@ -137,11 +200,10 @@
                     </div>
                 </div>
             </div>
-
-            <!-- 6 Nuevo -->
+            <!-- 6 -->
             <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="card h-100 shadow text-center">
-                    <img src="lataga2.jfif" class="card-img-top" alt="Snacks Gato Pescado" style="height: 220px; object-fit: cover;">
+                    <img src="./lataga2.jfif" class="card-img-top" alt="Snacks Gato Pescado" style="height: 220px; object-fit: cover;">
                     <div class="card-body">
                         <h5 class="card-title">Snacks Gato Salmón</h5>
                         <p class="card-text text-muted small">Bajos en calorías – 100 g</p>
@@ -150,11 +212,10 @@
                     </div>
                 </div>
             </div>
-
-            <!-- 7 Nuevo -->
+            <!-- 7 -->
             <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="card h-100 shadow text-center">
-                    <img src="croqueta.jfif" class="card-img-top" alt="Alimento Senior" style="height: 220px; object-fit: cover;">
+                    <img src="./croqueta.jfif" class="card-img-top" alt="Alimento Senior" style="height: 220px; object-fit: cover;">
                     <div class="card-body">
                         <h5 class="card-title">Alimento Gatos Senior</h5>
                         <p class="card-text text-muted small">Cuidado articular – 2 kg</p>
@@ -163,11 +224,10 @@
                     </div>
                 </div>
             </div>
-
-            <!-- 8 Nuevo -->
+            <!-- 8 -->
             <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="card h-100 shadow text-center">
-                    <img src="vercone.jfif" class="card-img-top" alt="Snacks Conejo" style="height: 220px; object-fit: cover;">
+                    <img src="./vercone.jfif" class="card-img-top" alt="Snacks Conejo" style="height: 220px; object-fit: cover;">
                     <div class="card-body">
                         <h5 class="card-title">Snacks Conejo Zanahoria</h5>
                         <p class="card-text text-muted small">Natural y crujiente – 120 g</p>
@@ -184,8 +244,8 @@
         <div class="container">
             <div class="row text-center text-md-start g-4">
                 <div class="col-lg-4 col-md-6">
-                    <a href="#" class="navbar-brand mb-3">
-                        <img src="logo.jfif" alt="Logo CatRabit" class="brand-logo">
+                    <a href="index.html" class="navbar-brand mb-3">
+                        <img src="./logo.jfif" alt="Logo CatRabit" class="brand-logo">
                         CatRabit
                     </a>
                     <p class="text-footer">Alimentación natural y sostenible para tus mascotas.</p>
@@ -194,9 +254,9 @@
                     <h5 class="mb-3">Enlaces Rápidos</h5>
                     <ul class="list-unstyled">
                         <li><a href="index.html" class="text-footer text-decoration-none">Inicio</a></li>
-                        <li><a href="quienes-somos.html" class="text-footer text-decoration-none">Quiénes Somos</a></li>
+                        <li><a href="quienes.html" class="text-footer text-decoration-none">Quiénes Somos</a></li>
                         <li><a href="servicios.html" class="text-footer text-decoration-none">Servicios</a></li>
-                        <li><a href="blog.html" class="text-footer text-decoration-none">Blog</a></li>
+                        <li><a href="Blog.html" class="text-footer text-decoration-none">Blog</a></li>
                         <li><a href="contacto.html" class="text-footer text-decoration-none">Contacto</a></li>
                     </ul>
                 </div>
@@ -206,7 +266,10 @@
                     <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
                     <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
                     <a href="#" class="social-icon"><i class="bi bi-whatsapp"></i></a>
-                    <p class="mt-3 text-footer">Contacto: contacto@catrabit.com<br>Teléfono: +591 2 123 4567</p>
+                    <p class="mt-3 text-footer">
+                        Contacto: contacto@catrabit.com<br>
+                        Teléfono: +591 2 123 4567
+                    </p>
                 </div>
             </div>
             <hr class="hr-footer my-4">
